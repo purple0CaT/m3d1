@@ -259,7 +259,23 @@ greatestElem([3010,12, 2333, 0912, 2044])
 14)
 
 Create a function to get the largest even number from an array of integers.
+*/console.log("\n <=== largest even number from an array of integers==>")
 
+function largestEven (arr) {
+    let x = arr.sort(function(a, b){return b-a})
+    let xMax = []
+    for(let indx of arr){
+        if ( indx % 2 == 0) {
+            xMax.push(indx)
+        }
+    }
+    console.log(Math.max(...xMax))
+}
+
+largestEven([10,12332, 2333, 12, 44])
+largestEven([3010,12, 2333, 0912, 2044, 3011])
+
+/*
 16)
 
 Create a function to check from two given integers, whether one is positive and another one is negative.
