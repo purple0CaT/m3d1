@@ -185,6 +185,8 @@ order of characters
     reverse('hello') === 'olleh'
     reverse('Greetings!') === '!sgniteerG'
  */
+    console.log("\n <== Reverse ==>")
+
 function reverse(a){
     let reversed = a.split('').reverse().join('')
     console.log(reversed)
@@ -205,7 +207,20 @@ where each subarray is of length size
     chunk([1, 2, 3, 4, 5], 4) --&gt; [[ 1, 2, 3, 4], [5]]
     chunk([1, 2, 3, 4, 5], 10) --&gt; [[ 1, 2, 3, 4, 5]]
 */
+console.log("\n <== Chunk ==>")
 
+function chunk (arr, num){
+    let finArr = []
+    for( i=0; i< arr.length; i+=num){
+        finArr.push(arr.slice(i, i+num))
+    }
+    console.log(finArr)
+}
+chunk([1, 2, 3, 4], 2)
+chunk([1, 2, 3, 4, 5], 2)
+chunk([1, 2, 3, 4, 5, 6, 7, 8], 3)
+chunk([1, 2, 3, 4, 5], 4)
+chunk([1, 2, 3, 4, 5], 10)
 /* 9) PYRAMID
 
 Write a function that accepts a positive number N.
