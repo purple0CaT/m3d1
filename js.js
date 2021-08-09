@@ -350,7 +350,8 @@ sumIntR(10,90)
 
 Create a function to convert a number to a string, the contents of which depend on the number's factors. Follow next example:
 */console.log("\n <== convert a number to a string ==>")
-    function factor (a){
+    
+function factor (a){
         let facArr = []
         if (typeof a == 'number'){
             let xy = a

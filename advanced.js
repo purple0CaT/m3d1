@@ -239,6 +239,23 @@ pyramid has spaces on both the left and right hand sides
         '  #  '
         ' ### '
         '#####' */
+console.log("\n <== pyramid ==>")
+
+function pyramid(a){
+    let treeS = ''
+    for ( i=0; i < a; i++){
+        treeS = ''
+        for(j=i;j<a;j++){
+            treeS += ' ' 
+        }
+        for(k=0;k<(i*2)-1;k++){
+            treeS += "#";
+    }
+    console.log(treeS)
+    
+}
+}
+pyramid(4)
 
 /* 10) SPYRAL MATRIX
 
@@ -261,3 +278,17 @@ and returns a NxN spiral matrix.
         [10,  9,  8, 7]]
 
 */
+console.log("\n <== Matrix ==>")
+
+function matrix(a){
+    let matrx = []
+    for (i=0; i<a; i++){
+        let matrxR = []
+        for(j=0; j<a; j++){
+            matrxR.push(Math.floor(Math.random()*20))
+        }
+        matrx.push(matrxR)
+    }
+    console.log(matrx)
+}
+matrix(3)
