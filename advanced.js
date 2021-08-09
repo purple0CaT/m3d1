@@ -185,7 +185,13 @@ order of characters
     reverse('hello') === 'olleh'
     reverse('Greetings!') === '!sgniteerG'
  */
-
+function reverse(a){
+    let reversed = a.split('').reverse().join('')
+    console.log(reversed)
+}
+reverse('apple')
+reverse('hello')
+reverse('Greetings!')
 /* 8) CHUNK
 
 Given an array and chunk size, divide the array into many subarrays
