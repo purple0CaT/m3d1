@@ -247,7 +247,15 @@ angleType('asd')
 13)
 
 Create a function to find the index of the greatest element of a given array of integers
+*/console.log("\n <=== greatest element of a given array ==>")
 
+function greatestElem (a){
+    let x = Math.max(...a)
+    console.log('Greatest Element are: '+ x)
+}
+greatestElem([10,12332, 2333, 12, 44])
+greatestElem([3010,12, 2333, 0912, 2044])
+/*
 14)
 
 Create a function to get the largest even number from an array of integers.
