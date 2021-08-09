@@ -90,7 +90,7 @@ console.log("\n <=== Create a new string of specified copies ==>")
 function copyCreate (a,b) {
 if ( typeof a == 'string'&& typeof b == "number"){
     let readyCopy = a
-    for ( i=0; i <2; i++){
+    for ( i=0; i < b; i++){
         readyCopy += " " + a.toLocaleLowerCase()
     }
     console.log(readyCopy)
@@ -98,12 +98,31 @@ if ( typeof a == 'string'&& typeof b == "number"){
 }
 
 copyCreate("Hello mate", 2)
+copyCreate("Hello mate", 5)
+
 /*
 
 7)
 Create a function to display the city name if the string begins with "Los" or "New" otherwise return blank.
 */
+function cityName (a) {
+    if( typeof a == "string"){
+        if ( (a.includes("Los", 0)&& !a.includes('Los', 1))|| (a.includes("New", 0)&& !a.includes('New', 1) )){
+            if ( a.includes('Los')){                
+                console.log("Los Angeles")
+            } else if ( a.includes('New')){                
+                console.log("New Orlean")
+            }
+        } else {
+            console.log('Empty')
+        }
+    }
 
+}
+
+cityName("Los Angeles")
+cityName("New Orlean")
+cityName("Not Los Angeles")
 /*
 8)
 Create a function to calculate the sum of three elements of a given array of integers of length 3.
