@@ -85,7 +85,19 @@ checkRange(20)
 
 Create a function to create a new string of specified copies (positive number) of a given string.
 */
+console.log("\n <=== Create a new string of specified copies ==>")
 
+function copyCreate (a,b) {
+if ( typeof a == 'string'&& typeof b == "number"){
+    let readyCopy = a
+    for ( i=0; i <2; i++){
+        readyCopy += " " + a.toLocaleLowerCase()
+    }
+    console.log(readyCopy)
+}
+}
+
+copyCreate("Hello mate", 2)
 /*
 
 7)
