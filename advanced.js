@@ -46,7 +46,7 @@ function anagrams(stra, strb){
 }
 
 function sortStr(str) {
-    return str.split('').sort().join('');
+    return str.split('').sort().join('')
 }
 
 anagrams('rail safety', 'fairy tales')
@@ -61,7 +61,30 @@ Given a word and a list of possible anagrams, select the correct sublist.
 
     "listen" and a list of candidates like "enlists" "google" "inlets" "banana" the program should return a list containing "inlets".
 */
+console.log("\n <== select the correct sublist. ==>")
 
+function sublists(str, arry){
+    str = str.replace(/[^\w]/g, '').toLowerCase()
+    let strSort = str.split('').sort().join('')
+
+    let arrSort = []
+    
+    for ( let ar of arry){
+        ar = ar.replace(/[^\w]/g, '').toLowerCase()
+        arrSort.push(ar.split('').sort().join(''))
+    }
+    console.log(arrSort)
+    console.log(strSort)
+    let readyList = []
+    for ( i=0; i < arrSort.length; i++){
+        if ( strSort === arrSort[i]){
+            readyList.push(arry[i])
+        }
+    }
+    console.log(readyList)
+}
+
+sublists('listen',["enlists", "google", "inlets", "banana"])
 /* 4) PALINDROME
 
 Given a string, return true if the string is a palindrome
