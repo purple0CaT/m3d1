@@ -53,7 +53,15 @@ removeChar("Lorem String", 5)
 4)
  Create a function to find the largest of three given integers.
 */
+console.log("\n <=== Find the largest ==>")
 
+function findLarge (a,b,c) {
+    console.log(Math.max(a,b,c))
+}
+
+findLarge(1, 4, 2)
+findLarge(8, 4, 2)
+findLarge(1, 4, 9)
 /*
 5)
 Create a function to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
