@@ -183,6 +183,26 @@ notCont([2,5])
 11)
 
 Create a function to find the longest string from a given array of strings.
+*/console.log("\n <=== longest string from a given array of strings. ==>")
+
+function longString (a) {
+    if (typeof a == "string"){
+        let splited = a.split(' ')
+        let wLeng = []
+
+        for ( let word of splited){
+            wLeng.push(word.length)
+        }
+        let xM = Math.max(...wLeng)
+        let longest = splited[wLeng.indexOf(xM)]
+        console.log (longest)
+    }
+}
+
+longString("Its preatty big string should be")
+longString("How you doin?")
+
+/*
 
 12)
 
