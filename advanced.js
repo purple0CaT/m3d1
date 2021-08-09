@@ -131,9 +131,7 @@ ordering of numbers.
 
 function reverseInt(a){
     let string = a.toString()
-    let finStr = string.split('')
-    finStr = finStr.reverse()
-    finStr = finStr.join('')
+    let finStr = string.split('').reverse().join('')
     finStr = parseFloat(finStr)
     finStr = finStr * Math.sign(a)
     console.log(finStr)
