@@ -66,7 +66,20 @@ findLarge(1, 4, 9)
 5)
 Create a function to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 */
+console.log("\n <=== Check whether two numbers are in range ==>")
 
+function checkRange (a){
+    if ( a > 40 && a <60 ) {
+        console.log("The number: " + a + ", are in 40-60 range")
+    } else if ( a >= 70 && a <= 100) {
+        console.log("The number: " + a + ", are in 70-100 range")
+    } else {
+        console.log(" the number are not in range")
+    }
+}
+checkRange(50)
+checkRange(80)
+checkRange(20)
 /*
 6) 
 
