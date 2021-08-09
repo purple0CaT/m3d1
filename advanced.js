@@ -289,6 +289,7 @@ function matrix(a){
         }
         matrx.push(matrxR)
     }
+    
     console.log(matrx)
 }
-matrix(3)
+matrix(5)
