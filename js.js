@@ -213,7 +213,37 @@ Types of angles:
     Right angle: An 90 degree angle.
     btuse angle: An angle between 90 and 180 degrees.
     Straight angle: A 180 degree angle.
+*/console.log("\n <=== types of a given angle. ==>")
 
+function angleType(a){
+    if (typeof a == 'number'){
+        if( a >= 0 && a <90){
+            console.log('Acute angle')
+        }
+        else if( a == 90){
+            console.log('Right angle')
+        }
+        else if( a > 90 && a <180){
+            console.log('btuse angle')
+        }
+         else if( a ==180){
+            console.log('Straight angle')
+        }
+        else {
+            console.log("More 180 or less than 0")
+        }
+    } else {
+        console.log ('Not an angle')
+    }
+}
+
+angleType(34)
+angleType(90)
+angleType(92)
+angleType(180)
+angleType(204)
+angleType('asd')
+/*
 13)
 
 Create a function to find the index of the greatest element of a given array of integers
