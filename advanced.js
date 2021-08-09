@@ -127,7 +127,22 @@ ordering of numbers.
     reverseInt(-15) === -51
     reverseInt(-90) === -9
  */
+    console.log("\n <== REVERSE INT ==>")
 
+function reverseInt(a){
+    let string = a.toString()
+    let finStr = string.split('')
+    finStr = finStr.reverse()
+    finStr = finStr.join('')
+    finStr = parseFloat(finStr)
+    finStr = finStr * Math.sign(a)
+    console.log(finStr)
+}
+    reverseInt(15)
+    reverseInt(981)
+    reverseInt(500)
+    reverseInt(-15)
+    reverseInt(-90) 
 /* 6) STEPS
 
 Write a function that accepts a positive number N.
