@@ -146,13 +146,40 @@ arraySum([9,5,1])
 9)
 Create a function to test whether an array of integers of length 2 contains 1 or a 3. 
 */
+console.log("\n <=== Test whether an array of integers of length 2 contains 1 or a 3. ==>")
 
+function testArr (a) {
+    if (a.includes(1) || a.includes(3)){
+        console.log("Contains 1 or a 3")
+    } else {
+        console.log("Not contains 1 or a 3")
+
+    }
+}
+
+testArr([3,5])
+testArr([2,1])
+testArr([2,5])
 /*
 
 10)
 
 Create a function to test whether an array of integers of length 2 does not contain 1 or a 3
+*/console.log("\n <=== Test whether an array of integers of length 2 does not contain 1 or a 3. ==>")
 
+function notCont(a){
+    if (!a.includes(1) && !a.includes(3)){
+        console.log("Not Contains 1 or a 3")
+    } else {
+        console.log("Contains 1 or a 3")
+    }
+}
+
+notCont([3,5])
+notCont([2,1])
+notCont([2,5])
+
+/*
 11)
 
 Create a function to find the longest string from a given array of strings.
