@@ -3,7 +3,7 @@
 1)
 Create a function to calculate the sum of the two given integers. If the two values are same, then returns triple their sum.
 */
-console.log("<=== SUM ==>")
+console.log("\n <=== SUM ==>")
 
 function sum (a,b){
     if( a == b){
@@ -18,7 +18,7 @@ console.log(sum(6, 6))
 2)
 Create a function to check two given numbers and return true if one of the number is 50 or if their sum is 50.
 */
-console.log("<=== Check Numb ==>")
+console.log("\n <=== Check Numb ==>")
 
 function checkNum (a, b){
     let x = a + b
@@ -35,9 +35,21 @@ checkNum(50, 25)
 3)
 Create a function to remove a character at the specified position of a given string and return the new string.
 */
+console.log("\n <=== Remove character ==>")
+function removeChar (a, b) {
+    if ( typeof a == "string" && typeof b == "number"){
 
+        let oldSt = a.substr(b)
+
+        let plusSt = a.slice(0, b - 1 - a.length)
+        console.log(plusSt+oldSt)
+    } else {
+    console.log ("not a string or wrong position")
+    }
+}
+removeChar("Lorem String", 0)
+removeChar("Lorem String", 5)
 /*
-
 4)
  Create a function to find the largest of three given integers.
 */
