@@ -394,5 +394,30 @@ this would be "34".
 
 20)
 Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
+*/console.log("\n <== returns its acronym ==>")
 
-*/
+function acron(a){
+if ( typeof a =='string'){
+    
+    switch (a.toLocaleLowerCase()){
+        case 'bbc':
+            console.log('British Broadcasting Corporation')
+        break
+        case 'asap':
+            console.log('As Soon As Possible')
+        break
+        case 'radar':
+            console.log('Radio Detection and Ranging')
+        break
+        
+        default: 
+            console.log('soon library will be updated')
+        break
+    }
+}
+}
+
+acron('BBC')
+acron('ASAP')
+acron('Radar')
+acron('MIT')
