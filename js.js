@@ -279,7 +279,38 @@ largestEven([3010,12, 2333, 0912, 2044, 3011])
 16)
 
 Create a function to check from two given integers, whether one is positive and another one is negative.
+*/console.log("\n <=== largest even number from an array of integers==>")
 
+function posNeg (a, b){
+    if ( typeof a == 'number' && typeof b == 'number'){
+        let positA
+        let positb
+            if (a >0){
+                positA = `${a} are positive, `
+            } else if ( a == 0 ) {
+                positA = `${a} are null, `
+            } else {
+                positA = `${a} are negative, `   
+            }
+
+
+            if (b < 0){
+                positB = `${b} are negative`
+            } else if ( b == 0 ) {
+                positB = `${b} are null`
+            } else {
+                positB = `${b} are positive`
+            }
+        
+
+        console.log(positA + positB)
+    }
+}
+
+posNeg ( 10, -2)
+posNeg ( -10, 2)
+posNeg ( 0, 0)
+/*
 17)
 
 Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case. 
