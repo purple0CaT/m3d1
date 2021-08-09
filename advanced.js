@@ -73,8 +73,6 @@ function sublists(str, arry){
         ar = ar.replace(/[^\w]/g, '').toLowerCase()
         arrSort.push(ar.split('').sort().join(''))
     }
-    console.log(arrSort)
-    console.log(strSort)
     let readyList = []
     for ( i=0; i < arrSort.length; i++){
         if ( strSort === arrSort[i]){
@@ -97,6 +95,24 @@ and punctuation in determining if the string is a palindrome.
     palindrome("abba") === true
     palindrome("abcdefg") === false
  */
+    console.log("\n <== palindrome ==>")
+
+function palindrome (str) {
+    let strg = str.split('')
+    let string = []
+    for ( let wrd of strg){
+        string.unshift(wrd)
+    }
+    string = string.join('')
+    if (string === str) {
+        console.log(`${str} is a palindrome`)
+    } else {
+        console.log(`${str} Not a palindrome`)
+    }
+}
+
+palindrome("abba") 
+palindrome("abcdefg")
 
 /* 5) REVERSE INT
 
