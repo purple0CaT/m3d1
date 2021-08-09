@@ -7,6 +7,22 @@ commonly used in the string.
     maxChar("abcccccccd") === "c"
     maxChar("apple 1231111") === "1"
 */
+console.log("\n <== commonly used ==>")
+
+function commUsed(str) {
+    let max = 0
+    maxChar = ''
+    str.split('').forEach(function(char){
+        if(str.split(char).length > max) {
+            max = str.split(char).length
+            maxChar = char
+        }
+    });
+    console.log(maxChar)
+}
+
+commUsed('Hellllo')
+commUsed('Common')
 
 /* 2) ANAGRAMS
 
@@ -20,6 +36,22 @@ or punctuation.  Consider capital letters to be the same as lower case
   anagrams('RAIL! SAFETY!', 'fairy tales') --&gt; True
   anagrams('Hi there', 'Bye there') --&gt; False
 */
+console.log("\n <== anagrams ==>")
+
+function anagrams(stra, strb){
+    stra = stra.replace(/[^\w]/g, '').toLowerCase()
+    strb = strb.replace(/[^\w]/g, '').toLowerCase()
+
+    console.log(sortStr(stra) === sortStr(strb))
+}
+
+function sortStr(str) {
+    return str.split('').sort().join('');
+}
+
+anagrams('rail safety', 'fairy tales')
+anagrams('RAIL! SAFETY!', 'fairy tales')
+anagrams('Hi there', 'Bye there')
 
 /* 3) ANAGRAMS 2
 
