@@ -314,7 +314,21 @@ posNeg ( 0, 0)
 17)
 
 Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case. 
+*/console.log("\n <=== largest even number from an array of integers==>")
 
+function characCase (str) {
+    if ( str.length <= 3) {
+        console.log (str.toUpperCase())
+    } else {
+        let lowerC = str.substr(0, 3).toLocaleLowerCase()
+        let upC = str.slice(3).toUpperCase()
+        console.log(lowerC+upC)
+    }
+}
+
+characCase('Hello there')
+characCase('Hel')
+/*
 18)
 
 Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
