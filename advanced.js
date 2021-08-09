@@ -162,7 +162,18 @@ step has spaces on the right hand side!
         '##  '
         '### '
         '####' */
+console.log("\n <== shape with N ==>")
 
+function steps(a){
+    let steps = ''
+    let tree = ''
+    for ( i=0; i < a; i++){
+        steps += `#`
+        tree += steps + '\n'
+    }
+    console.log(tree)
+}
+steps(4)
 /* 7) REVERSE STRING
 
 Given a string, return a new string with the reversed
