@@ -279,7 +279,7 @@ largestEven([3010,12, 2333, 0912, 2044, 3011])
 16)
 
 Create a function to check from two given integers, whether one is positive and another one is negative.
-*/console.log("\n <=== largest even number from an array of integers==>")
+*/console.log("\n <=== one is positive and another one is negative. ==>")
 
 function posNeg (a, b){
     if ( typeof a == 'number' && typeof b == 'number'){
@@ -314,7 +314,7 @@ posNeg ( 0, 0)
 17)
 
 Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case. 
-*/console.log("\n <=== largest even number from an array of integers==>")
+*/console.log("\n <=== 3 characters are in lower case==>")
 
 function characCase (str) {
     if ( str.length <= 3) {
@@ -332,7 +332,20 @@ characCase('Hel')
 18)
 
 Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
+*/console.log("\n <=== sum is in the range 50..80 ==>")
+function sumIntR(a,b){
+    let sum = a+b
+    if ( sum > 50 && sum < 80){
+        console.log(65)
+    } else {
+        console.log(80)
+    }
+}
 
+sumIntR(10,60)
+sumIntR(10,30)
+sumIntR(10,90)
+/*
 19)
 
 Create a function to convert a number to a string, the contents of which depend on the number's factors. Follow next example:
