@@ -105,9 +105,11 @@ copyCreate("Hello mate", 5)
 7)
 Create a function to display the city name if the string begins with "Los" or "New" otherwise return blank.
 */
+console.log("\n <=== Display the city name ==>")
+
 function cityName (a) {
     if( typeof a == "string"){
-        if ( (a.includes("Los", 0)&& !a.includes('Los', 1))|| (a.includes("New", 0)&& !a.includes('New', 1) )){
+        if ( (a.includes("Los", 0)&& !a.includes('Los', 1)) || (a.includes("New", 0)&& !a.includes('New', 1) )){
             if ( a.includes('Los')){                
                 console.log("Los Angeles")
             } else if ( a.includes('New')){                
@@ -117,7 +119,6 @@ function cityName (a) {
             console.log('Empty')
         }
     }
-
 }
 
 cityName("Los Angeles")
@@ -127,6 +128,18 @@ cityName("Not Los Angeles")
 8)
 Create a function to calculate the sum of three elements of a given array of integers of length 3.
 */
+console.log("\n <=== Sum of three elements of a given array==>")
+
+function arraySum (a) {
+    let sum = 0
+    for ( let num of a) {
+        sum += num
+    }
+    console.log(sum)
+}
+
+arraySum([1,5,6])
+arraySum([9,5,1])
 
 /*
 
