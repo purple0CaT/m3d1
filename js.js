@@ -349,7 +349,37 @@ sumIntR(10,90)
 19)
 
 Create a function to convert a number to a string, the contents of which depend on the number's factors. Follow next example:
+*/console.log("\n <== convert a number to a string ==>")
+    function factor (a){
+        let facArr = []
+        if (typeof a == 'number'){
+            let xy = a
+            for ( i=0; i < a; i++){
+                if ( a % i == 0){
+                    facArr.push(i)
+                }
+            }
+        }
+        switch (facArr.length){
+            case 3:
+                console.log(`${a}'s factors are ${facArr}, this would be a Diego`)
+                break
+            case 5:
+                console.log(`${a}'s factors are ${facArr}, this would be a Riccardo`)
+                break
+            case 7:
+                console.log(`${a}'s factors are ${facArr}, this would be a Stefano`)
+                break
+            default: console.log(`${a}'s factors are ${facArr}, this would be a ${a}`)
+            break
+            
+        }
+    }
 
+factor(28)
+factor(30)
+factor(34)
+/*
 If the number has 3 as a factor, output 'Diego'.
 If the number has 5 as a factor, output 'Riccardo'.
 If the number has 7 as a factor, output 'Stefano'.
